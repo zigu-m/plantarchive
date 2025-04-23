@@ -1,0 +1,78 @@
+:root{
+    --clr-grey: #b0b0b0;
+    --clr-lightgrey: #ededed;
+    --clr-darkgrey: #616161;
+    --font-size-normal: 15px;
+    --line-height-normal: 24px;
+    --font-size-big: 21px;
+    --line-height-big: 28px;
+    --main-padding: 20px
+}
+
+.menu-right{
+    background-color: var(--clr-grey);
+}
+
+main{
+    padding-bottom: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+}
+
+@media (max-width: 768px) {
+    main {
+      grid-template-columns: 1fr;
+    }
+}
+
+#text{
+    outline: 1px solid black;
+    border-radius: 20px;
+    padding: 0;
+    height: fit-content ;
+    display: grid;
+    grid-template-rows: 30px 1fr;
+}
+
+.top-section {
+    background-color: var(--clr-lightgrey); 
+    border-top-left-radius: 20px; 
+    border-top-right-radius: 20px;
+    border-bottom: 1px solid #343434;
+}
+
+.bottom-section {
+    display: grid;
+    grid-template-columns: 35% 60%;
+    gap: 20px; 
+    padding: 20px; 
+}
+
+@media (max-width: 500px) {
+    main{
+        margin: 20px;
+    }
+    .bottom-section {
+      grid-template-columns: 1fr;
+    }
+}
+
+.text-content{
+    font-size: var(--font-size-normal);
+    color: #343434;
+    margin-right: 0px;
+}
+
+.image-content img{
+    max-width: 100%; /* 이미지가 컨테이너를 넘지 않도록 */
+    height: auto; 
+    outline: 1px solid black;
+}
+
+#img img{
+    max-width: 100%;
+    float: right;
+    outline: 1px solid black;
+}
+

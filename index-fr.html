@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2145 PLANT ARCHIVE</title>
+    <meta name="description" content="2145 PLANT ARCHIVE">
+
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/catalogue.css">
+</head>
+<body>
+    <header>
+        <div id="menu-top">
+            <h1>2145 PLANT ARCHIVE</h1>
+            <div id="lang-selector">
+                <button><a href="index.html">KR</a></button>
+                <button class="current">FR</button>
+            </div>
+        </div>
+        <nav>
+            <ul class="menu">
+                <li class="menu-left"><a href="index-fr.html">Catalogue</a></li>
+                <li class="menu-right"><a href="information-fr.html">Informations</a></li>
+            </ul>
+        </nav>
+
+        
+    </header>
+
+    <div class="container">
+        <div class="menu-container">
+        <h2>L<span>iste</span></h2>
+        <div id="side-menu"> 
+            <ul>
+                <li><a href="plante1-fr.html">Terracotta thunbergii</a></li>
+                <li><a href="plante2-fr.html">Metallica sericea</a></li>
+                <li><a href="plante3-fr.html">Dicranopteris linearis </a></li>
+                <li><a href="plante5-fr.html">Cybranopteris adaptometallica</a></li>
+                <li><a href="plante4-fr.html">ReMetallium autorepairus</a></li>
+                <li><a href="plante6-fr.html">Garcinia mangostana mobilis</a></li>
+            </ul>
+        </div>
+        
+        </div>
+        <div class="image-container">
+            <img src="src/img/catalogue.webp" alt="caltalogue"> 
+              
+        </div>
+    </div>
+    
+    <script>
+        // 모바일에서만 h2 클릭 시 메뉴 토글
+    if (window.matchMedia('(max-width: 768px)').matches) {
+        document.querySelector('h2').addEventListener('click', function() {
+        his.style.width = this.style.width === '250px' ? '45px' : '250px';
+        document.getElementById('side-menu').style.width = 
+        document.getElementById('side-menu').style.width === '250px' ? '45px' : '250px';
+    });
+}
+    </script>
+ 
+</body>
+</html>

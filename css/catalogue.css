@@ -1,0 +1,151 @@
+:root{
+    --clr-grey: #b0b0b0;
+    --clr-lightgrey: #ededed;
+    --clr-darkgrey: #616161;
+    --font-size-normal: 15px;
+    --line-height-normal: 24px;
+    --font-size-big: 21px;
+    --line-height-big: 28px;
+    --main-padding: 20px
+}
+
+header{
+    z-index: 1;
+}
+
+.menu-left{
+    background-color: var(--clr-grey);
+}
+
+.container{
+    display: grid;
+    grid-template-columns: auto 1fr;
+    min-width: 331px;
+}
+
+.menu-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: 45px;
+    height: 100vh;
+}
+
+h2{
+    padding: 10px 18px;
+    background-color: var(--clr-lightgrey);
+    width: 45px;
+    outline: 1px solid black;
+    overflow: hidden;
+    cursor: pointer;
+    font-size: var(--font-size-big);
+    transition: width 0.1s ease, opacity 0.1s ease;
+}
+
+span{
+    opacity: 0;
+    transition: opacity 0.1s ease;
+}
+
+.menu-container:hover h2{
+    width: 250px;
+}
+
+.menu-container:hover span {
+    opacity: 1; 
+}
+
+#side-menu{ 
+    width: 45px;
+    height: 100vh;
+    background-color: var(--clr-lightgrey);
+    outline: 1px solid black;
+    transition: width 0.1s ease;
+    line-height: var(--line-height-big);
+    overflow: visible;
+}
+
+#side-menu ul{
+    list-style: none;
+    padding: 10px 0 10px 10px;  
+}
+
+#side-menu li{
+    position: relative;
+}
+/*
+#side-menu li::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: -1px;
+    width: 1px;
+    height: 100%;
+    background-color: green;
+    z-index: 99;
+}
+*/
+
+#side-menu li a{
+    padding: 10px;
+    color: black;
+    text-decoration: none;
+    white-space: nowrap;
+    opacity: 0;
+    transition: opacity 0.1s ease 0.1s;
+    transition: color 0.1s ease 0.1s;
+    display: block;
+    width: 300px;
+}
+
+.menu-container:hover #side-menu{
+    width: 250px;
+}
+
+.menu-container:hover #side-menu li a{
+    opacity: 1;
+
+}
+#side-menu li a{
+    position: relative;
+    display: block;
+    width: 100%;
+    overflow: visible;
+}
+#side-menu li a:hover{
+    font-style: italic;
+    color: blue;
+    background-color: white;
+    outline: 1px solid black;
+}
+#side-menu li a:hover::after{
+    position: absolute;
+    content:"";
+    top: 0;
+    right: -1px;
+    width: 1px;
+    height: 100%;
+    background-color: white;
+    z-index: 99;
+}
+
+
+.image-container {
+    margin-top: -100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: -1;
+}
+
+.image-container img {
+    width: 30%;
+    min-width: 200px;
+    height: auto; 
+}
+
+footer{
+    text-align: center;
+    width: calc(100% - 45px);
+    margin-left: 45px;
+}

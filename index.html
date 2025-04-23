@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2145 PLANT ARCHIVE</title>
+    <meta name="description" content="2145 PLANT ARCHIVE">
+
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/catalogue.css">
+</head>
+<body>
+    <header>
+        <div id="menu-top">
+            <h1>2145 PLANT ARCHIVE</h1>
+            <div id="lang-selector">
+                <button class="current">KR</button>
+                <button><a href="index-fr.html">FR</a></button>
+            </div>
+        </div>
+        <nav>
+            <ul class="menu">
+                <li class="menu-left"><a href="index.html">Catalogue</a></li>
+                <li class="menu-right"><a href="information.html">Informations</a></li>
+            </ul>
+        </nav>
+
+        
+    </header>
+
+    <div class="container">
+        <div class="menu-container">
+        <h2>L<span>iste</span></h2>
+        <div id="side-menu"> 
+            <ul>
+                <li><a href="plante1.html">테라코르타 후박나무</a></li>
+                <li><a href="plante2.html">메탈리카 참식나무</a></li>
+                <li><a href="plante3.html">발풀고사리</a></li>
+                <li><a href="plante5.html">적응금속고사리</a></li>
+                <li><a href="plante4.html">리메탈리움 선인장</a></li>
+                <li><a href="plante6.html">이동형 망고스틴</a></li>
+            </ul>
+        </div>
+        
+        </div>
+        <div class="image-container">
+            <img src="src/img/catalogue.webp" alt="caltalogue"> 
+              
+        </div>
+    </div>
+    <script>
+        // 모바일에서만 h2 클릭 시 메뉴 토글
+    if (window.matchMedia('(max-width: 768px)').matches) {
+        document.querySelector('h2').addEventListener('click', function() {
+        his.style.width = this.style.width === '250px' ? '45px' : '250px';
+        document.getElementById('side-menu').style.width = 
+        document.getElementById('side-menu').style.width === '250px' ? '45px' : '250px';
+    });
+}
+    </script>
+   
+ 
+</body>
+</html>
